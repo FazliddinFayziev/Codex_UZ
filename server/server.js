@@ -8,7 +8,7 @@ import { Configuration, OpenAIApi } from 'openai'
 dotenv.config()
 
 const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
