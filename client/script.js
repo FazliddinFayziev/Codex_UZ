@@ -1,6 +1,7 @@
 import bot from './assets/bot.svg'
 import user from './assets/user.svg'
 
+
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 
@@ -87,6 +88,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv)
 
   const response = await fetch('https://codex-uzb.onrender.com/', {
+    mode: 'no-cors',
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
